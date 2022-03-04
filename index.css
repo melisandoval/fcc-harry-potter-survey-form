@@ -1,0 +1,231 @@
+body {
+  margin: 0px;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.281), rgba(5, 5, 5, 0.096)),
+    url("./img/background.jpg");
+  display: grid;
+  place-items: center;
+  justify-content: center;
+}
+
+p {
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  font-family: "Hubballi", cursive;
+  font-size: 1.7rem;
+  color: #e68b25;
+}
+
+/* header */
+
+.header-container {
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+header {
+  display: grid;
+  place-items: center;
+}
+
+.logo-div {
+  margin-top: 5vh;
+  display: grid;
+  place-items: center;
+  margin: 4%;
+}
+
+.harry-potter-logo {
+  max-width: 70vw;
+  padding: 2%;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Hubballi", cursive;
+  color: #e68b25;
+  font-size: 3rem;
+  text-shadow: 1px 1px 1px whitesmoke;
+  margin-block-start: 0em;
+  margin-block-end: 1em;
+}
+
+#description {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  color: whitesmoke;
+}
+
+/* main */
+
+main {
+  width: 75vw;
+  margin-bottom: 3%;
+  /* background-color: #0d0f24; */
+  background-color: #0d0f24e1;
+  border-radius: 1vw;
+  display: grid;
+  place-items: center;
+}
+
+.main-content {
+  margin: 5%;
+}
+
+#survey-form {
+  width: 100%;
+}
+
+.inputs-section {
+  display: grid;
+  place-items: center;
+}
+
+/* form groups */
+
+.form-group,
+.form-group-options,
+.number-group {
+  margin: 1em 0 1em;
+  width: 50%;
+}
+
+.form-group-options {
+  display: grid;
+  place-items: center;
+}
+
+.number-group {
+  display: flex;
+  align-items: center;
+}
+
+.button-div {
+  display: grid;
+  place-items: center;
+  margin-top: 3%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 1em 1.7em;
+  margin: 0.5em 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="number"] {
+  margin: 2em;
+  width: 60%;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  accent-color: #e68b25;
+}
+
+.radio-buttons-group,
+.checkboxes-group {
+  justify-self: start;
+  margin-left: 35%;
+}
+
+.option-text {
+  font-family: "Open Sans", sans-serif;
+  color: whitesmoke;
+  font-size: 1rem;
+}
+
+.submit-button {
+  background-color: #e68b25;
+  color: #0d0f24;
+  font-family: "Hubballi", cursive;
+  font-size: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 32px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 1px 1px 2px whitesmoke;
+  transition-duration: 0.2s;
+}
+
+.submit-button:hover {
+  background-color: whitesmoke; /* Green */
+  color: #e68b25;
+  text-shadow: 0.5px 0.5px 0.5px #0d0f24;
+}
+
+/* for smartphones */
+@media only screen and (max-width: 480px) {
+  main {
+    width: 95vw;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  #description {
+    font-size: 1rem;
+  }
+
+  .radio-buttons-group,
+  .checkboxes-group {
+    margin-left: 5%;
+  }
+}
+
+/* for tablets */
+@media only screen and (min-width: 481px) and (max-width: 912px) {
+  main {
+    width: 85vw;
+  }
+
+  .radio-buttons-group,
+  .checkboxes-group {
+    margin-left: 15%;
+  }
+}
+
+/* for Galaxy Fold */
+@media only screen and (max-width: 281px) {
+  main {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    margin-bottom: 5%;
+  }
+
+  .main-content {
+    width: 100%;
+    margin: 5%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin: 5%;
+  }
+
+  #description {
+    font-size: 1rem;
+    margin: 2%;
+  }
+
+  .textarea-div {
+    width: 70%;
+  }
+}

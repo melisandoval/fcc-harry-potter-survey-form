@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<!-- Thank you for checking my code! 😃
+    Please don't hesitate to contact me if you have any questions. 
+    You can reach me at melisandoval@live.com.ar -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hubballi&family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Harry Potter survey</title>
+  </head>
+  <body>
+    <div class="header-container">
+      <header>
+        <div class="logo-div">
+          <img
+            src="./img/harry-potter-logo.png"
+            alt="Harry Potter logo"
+            class="harry-potter-logo"
+          />
+        </div>
+      </header>
+    </div>
+
+    <main>
+      <div class="main-content">
+        <h1 id="title">✨ A giveaway for witches and wizards ✨</h1>
+        <!-- Form: Associating labels explicitly (for attribute on label 
+and same id attribute on input instead of wrapping input with label),
+for assistive technologies: 
+https://www.w3.org/WAI/tutorials/forms/labels/#associating-labels-implicitly  -->
+        <form id="survey-form">
+          <div>
+            <p id="description">
+              Answer the survey and have the chance to win an official wand!
+            </p>
+          </div>
+          <section class="inputs-section">
+            <!-- Name -->
+            <div class="form-group">
+              <p><label for="name" id="name-label">Name *</label></p>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Please enter your name"
+                required
+              />
+            </div>
+            <!-- Email -->
+            <div class="form-group">
+              <p><label for="email" id="email-label">Email *</label></p>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Please enter your email"
+                required
+              />
+            </div>
+            <!-- Number -->
+            <div class="number-group">
+              <p>
+                <label for="number" id="number-label"
+                  >What is your favourite book?
+                </label>
+              </p>
+              <input
+                type="number"
+                id="number"
+                name="number-field"
+                min="1"
+                max="7"
+                placeholder="The number..."
+              />
+            </div>
+            <!-- Dropdown -->
+            <div class="form-group-options">
+              <p>
+                <label for="dropdown">What is your favourite movie? *</label>
+              </p>
+              <div>
+                <select id="dropdown" name="dropdown" required>
+                  <p>
+                    <option value="movie-1">
+                      Harry Potter and the Philosopher's Stone (2001)
+                    </option>
+                  </p>
+                  <option value="movie-2">
+                    Harry Potter and the Chamber of Secrets (2002)
+                  </option>
+                  <option value="movie-3">
+                    Harry Potter and the Prisoner of Azkaban (2004)
+                  </option>
+                  <option value="movie-4">
+                    Harry Potter and the Goblet of Fire (2005)
+                  </option>
+                  <option value="movie-5">
+                    Harry Potter and the Order of the Phoenix (2007)
+                  </option>
+                  <option value="movie-6">
+                    Harry Potter and the Half-Blood Prince (2009)
+                  </option>
+                  <option value="movie-7-part1">
+                    Harry Potter and the Deathly Hallows – Part 1 (2010)
+                  </option>
+                  <option value="movie-7-part2">
+                    Harry Potter and the Deathly Hallows – Part 2 (2011)
+                  </option>
+                </select>
+              </div>
+            </div>
+            <!-- Radio Buttons -->
+            <div class="form-group-options">
+              <p>What is your house?</p>
+              <div class="radio-buttons-group">
+                <p class="option-text">
+                  <label for="Gryffindor">
+                    <input
+                      type="radio"
+                      name="radio-buttons"
+                      value="Gryffindor"
+                      id="Gryffindor"
+                      checked
+                    />
+                    Gryffindor
+                  </label>
+                </p>
+                <p class="option-text">
+                  <label for="Hufflepuff">
+                    <input
+                      type="radio"
+                      name="radio-buttons"
+                      value="Hufflepuff"
+                      id="Hufflepuff"
+                    />
+                    Hufflepuff
+                  </label>
+                </p>
+                <p class="option-text">
+                  <label for="Ravenclaw">
+                    <input
+                      type="radio"
+                      name="radio-buttons"
+                      value="Ravenclaw"
+                      id="Ravenclaw"
+                    />
+                    Ravenclaw
+                  </label>
+                </p>
+                <p class="option-text">
+                  <label for="Slytherin">
+                    <input
+                      type="radio"
+                      name="radio-buttons"
+                      value="Slytherin"
+                      id="Slytherin"
+                    />
+                    Slytherin
+                  </label>
+                </p>
+              </div>
+            </div>
+            <!-- Checkboxes -->
+            <div class="form-group-options">
+              <p style="text-align: center">
+                What spells would you like to do with your new wand?
+              </p>
+              <div class="checkboxes-group">
+                <p class="option-text">
+                  <label for="Accio">
+                    <input
+                      type="checkbox"
+                      name="checkboxes"
+                      value="Accio"
+                      id="Accio"
+                    />
+                    Accio
+                  </label>
+                </p>
+                <p class="option-text">
+                  <label for="Alohomora">
+                    <input
+                      type="checkbox"
+                      name="checkboxes"
+                      value="Alohomora"
+                      id="Alohomora"
+                    />
+                    Alohomora
+                  </label>
+                </p>
+                <p class="option-text">
+                  <label for="Expecto-Patronum">
+                    <input
+                      type="checkbox"
+                      name="checkboxes"
+                      value="Expecto-Patronum"
+                      id="Expecto-Patronum"
+                    />
+                    Expecto Patronum
+                  </label>
+                </p>
+                <p class="option-text">
+                  <label for="Expelliarmus">
+                    <input
+                      type="checkbox"
+                      name="checkboxes"
+                      value="Expelliarmus"
+                      id="Expelliarmus"
+                    />
+                    Expelliarmus
+                  </label>
+                </p>
+                <p class="option-text">
+                  <label for="Lumos">
+                    <input
+                      type="checkbox"
+                      name="checkboxes"
+                      value="Lumos"
+                      id="Lumos"
+                    />
+                    Lumos
+                  </label>
+                </p>
+                <p class="option-text">
+                  <label for="Oculus-Reparo">
+                    <input
+                      type="checkbox"
+                      name="checkboxes"
+                      value="Oculus-Reparo"
+                      id="Oculus-Reparo"
+                    />
+                    Oculus Reparo
+                  </label>
+                </p>
+                <p class="option-text">
+                  <label for="Obliviate">
+                    <input
+                      type="checkbox"
+                      name="checkboxes"
+                      value="Obliviate"
+                      id="Obliviate"
+                    />
+                    Obliviate
+                  </label>
+                </p>
+                <p class="option-text">
+                  <label for="Petrificus-Totalus">
+                    <input
+                      type="checkbox"
+                      name="checkboxes"
+                      value="Petrificus-Totalus"
+                      id="Petrificus-Totalus"
+                    />
+                    Petrificus Totalus
+                  </label>
+                </p>
+                <p class="option-text">
+                  <label for="Prior-Incantato">
+                    <input
+                      type="checkbox"
+                      name="checkboxes"
+                      value="Prior-Incantato"
+                      id="Prior-Incantato"
+                    />
+                    Prior Incantato
+                  </label>
+                </p>
+                <p class="option-text">
+                  <label for="Wingardium-Leviosa">
+                    <input
+                      type="checkbox"
+                      name="checkboxes"
+                      value="Wingardium-Leviosa"
+                      id="Wingardium-Leviosa"
+                    />
+                    Wingardium Leviosa
+                  </label>
+                </p>
+              </div>
+            </div>
+            <!-- Textarea -->
+            <div class="textarea-div">
+              <p>
+                <label for="textarea"
+                  >Why are you a fan of the Harry Potter saga? (tell us your
+                  story):</label
+                >
+              </p>
+              <textarea
+                id="textarea"
+                class="input-textarea"
+                name="textarea"
+                cols="80"
+                rows="10"
+                placeholder="I'm a big fan because..."
+              ></textarea>
+            </div>
+            <div class="button-div">
+              <button type="submit" id="submit" class="submit-button">
+                Submit
+              </button>
+            </div>
+          </section>
+        </form>
+      </div>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
