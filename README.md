@@ -1,3 +1,3 @@
-# FCC-Survey-Form-Project
+Survey Form Project
 
 A simple survey form made with HTML and CSS.
