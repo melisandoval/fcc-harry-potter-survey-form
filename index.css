@@ -142,7 +142,9 @@ input[type="checkbox"] {
   margin-left: 35%;
 }
 
-.option-text {
+.option-text,
+footer p,
+footer a {
   font-family: "Open Sans", sans-serif;
   color: whitesmoke;
   font-size: 1rem;
@@ -187,6 +189,19 @@ input[type="checkbox"] {
   .checkboxes-group {
     margin-left: 5%;
   }
+}
+
+footer {
+  background-color: #0d0f24;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  padding: 0.5em;
+}
+
+footer a {
+  text-decoration: none;
+  color: #e68b25;
 }
 
 /* for tablets */
