@@ -102,10 +102,10 @@ main {
   place-items: center;
 }
 
-.number-group {
+/* .number-group {
   display: flex;
   align-items: center;
-}
+} */
 
 .button-div {
   display: grid;
@@ -206,7 +206,8 @@ footer p {
 
   .radio-buttons-group,
   .checkboxes-group {
-    margin-left: 5%;
+    /* margin-left: 5%; */
+    margin-left: 25vw;
   }
 
   .form-group,
@@ -225,7 +226,8 @@ footer p {
 
   .radio-buttons-group,
   .checkboxes-group {
-    margin-left: 15%;
+    /* margin-left: 15%; */
+    margin-left: 25vw;
   }
 
   .form-group,

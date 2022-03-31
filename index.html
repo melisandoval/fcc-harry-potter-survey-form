@@ -60,14 +60,33 @@ https://www.w3.org/WAI/tutorials/forms/labels/#associating-labels-implicitly  --
                   >What is your favourite book?
                 </label>
               </p>
-              <input
-                type="number"
-                id="number"
-                name="number-field"
-                min="1"
-                max="7"
-                placeholder="The number..."
-              />
+              <div>
+                <select id="books" name="books" required>
+                  <p>
+                    <option value="book-1">
+                      The first: Harry Potter and the Philosopher's Stone.
+                    </option>
+                  </p>
+                  <option value="book-2">
+                    The second: Harry Potter and the Chamber of Secrets.
+                  </option>
+                  <option value="book-3">
+                    The third: Harry Potter and the Prisoner of Azkaban.
+                  </option>
+                  <option value="book-4">
+                    The fourth: Harry Potter and the Goblet of Fire.
+                  </option>
+                  <option value="book-5">
+                    The fifth: Harry Potter and the Order of the Phoenix.
+                  </option>
+                  <option value="book-6">
+                    The sixth: Harry Potter and the Half-Blood Prince.
+                  </option>
+                  <option value="book-7">
+                    The seventh: Harry Potter and the Deathly Hallows.
+                  </option>
+                </select>
+              </div>
             </div>
             <!-- Dropdown -->
             <div class="form-group-options">
