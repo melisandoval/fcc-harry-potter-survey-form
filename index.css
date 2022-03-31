@@ -172,6 +172,24 @@ footer a {
   text-shadow: 0.5px 0.5px 0.5px #0d0f24;
 }
 
+footer {
+  background-color: #0d0f24;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  padding: 0.5em;
+}
+
+footer a {
+  text-decoration: none;
+  color: #e68b25;
+}
+
+footer p {
+  margin: 1em;
+  text-align: center;
+}
+
 /* for smartphones */
 @media only screen and (max-width: 480px) {
   main {
@@ -190,19 +208,13 @@ footer a {
   .checkboxes-group {
     margin-left: 5%;
   }
-}
 
-footer {
-  background-color: #0d0f24;
-  width: 100vw;
-  display: grid;
-  place-items: center;
-  padding: 0.5em;
-}
-
-footer a {
-  text-decoration: none;
-  color: #e68b25;
+  .form-group,
+  .form-group-options,
+  .number-group {
+    margin: 1em 0 1em;
+    width: 80%;
+  }
 }
 
 /* for tablets */
@@ -214,6 +226,16 @@ footer a {
   .radio-buttons-group,
   .checkboxes-group {
     margin-left: 15%;
+  }
+
+  .form-group,
+  .form-group-options {
+    width: 70%;
+  }
+
+  .radio-buttons-group,
+  .checkboxes-group {
+    margin-left: 35%;
   }
 }
 
@@ -243,5 +265,9 @@ footer a {
 
   .textarea-div {
     width: 70%;
+  }
+
+  p {
+    font-size: 1.5rem;
   }
 }
