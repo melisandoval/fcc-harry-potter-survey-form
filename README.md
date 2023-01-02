@@ -2,4 +2,4 @@
 
 - HTML and responsive CSS.
 
-Live version: https://melisandoval.github.io/fcc-project2-survey-form/
+Live version: https://melisandoval.github.io/fcc-harry-potter-survey-form/
