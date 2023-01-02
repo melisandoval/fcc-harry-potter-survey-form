@@ -1,5 +1,5 @@
-Survey Form Project
+# A Harry Potter fan survey form page!
 
-A simple survey form made with HTML and CSS.
+- HTML and responsive CSS.
 
-https://melisandoval.github.io/FCC-Project2-Survey-Form/
+Live version: https://melisandoval.github.io/fcc-project2-survey-form/
